@@ -143,7 +143,88 @@ I am a **Full-Stack Software Engineer** currently engineering and shipping produ
 
 ---
 
-### `// 05. REPOSITORY DIRECTORY & CONNECT`
+### `// 05. COMMUNITY TIC-TAC-TOE`
+
+Play a live turn against **Tokyo Bot** directly on this README. Click any available empty cell `[ ⬜ ]` to open a 1-click issue. The GitHub Action will immediately execute the bot's counter-move and commit the new board state.
+
+<!-- START_SECTION:tictactoe -->
+<div align="center">
+
+| Col 1 | Col 2 | Col 3 |
+| :---: | :---: | :---: |
+| [&nbsp;⬜&nbsp;](https://github.com/paazil3rdviz/paazil3rdviz/issues/new?title=ttc%7Cmove%7C0&body=Click+'Submit+new+issue'+to+play+your+turn.) | [&nbsp;⬜&nbsp;](https://github.com/paazil3rdviz/paazil3rdviz/issues/new?title=ttc%7Cmove%7C1&body=Click+'Submit+new+issue'+to+play+your+turn.) | [&nbsp;⬜&nbsp;](https://github.com/paazil3rdviz/paazil3rdviz/issues/new?title=ttc%7Cmove%7C2&body=Click+'Submit+new+issue'+to+play+your+turn.) |
+| [&nbsp;⬜&nbsp;](https://github.com/paazil3rdviz/paazil3rdviz/issues/new?title=ttc%7Cmove%7C3&body=Click+'Submit+new+issue'+to+play+your+turn.) | [&nbsp;⬜&nbsp;](https://github.com/paazil3rdviz/paazil3rdviz/issues/new?title=ttc%7Cmove%7C4&body=Click+'Submit+new+issue'+to+play+your+turn.) | [&nbsp;⬜&nbsp;](https://github.com/paazil3rdviz/paazil3rdviz/issues/new?title=ttc%7Cmove%7C5&body=Click+'Submit+new+issue'+to+play+your+turn.) |
+| [&nbsp;⬜&nbsp;](https://github.com/paazil3rdviz/paazil3rdviz/issues/new?title=ttc%7Cmove%7C6&body=Click+'Submit+new+issue'+to+play+your+turn.) | [&nbsp;⬜&nbsp;](https://github.com/paazil3rdviz/paazil3rdviz/issues/new?title=ttc%7Cmove%7C7&body=Click+'Submit+new+issue'+to+play+your+turn.) | [&nbsp;⬜&nbsp;](https://github.com/paazil3rdviz/paazil3rdviz/issues/new?title=ttc%7Cmove%7C8&body=Click+'Submit+new+issue'+to+play+your+turn.) |
+<br />
+
+🎮 <b>Your turn!</b> (Last move by @anonymous) — Click an empty square `⬜` to play as <b>❌</b>.
+
+<a href="https://github.com/paazil3rdviz/paazil3rdviz/issues/new?title=ttc%7Creset&body=Click+'Submit+new+issue'+to+reset+the+game+board."><img src="https://img.shields.io/badge/RESET-GAME_BOARD-1A1B26?style=flat-square&logo=github&logoColor=73DACA" alt="Reset Board" /></a>
+
+</div>
+<!-- END_SECTION:tictactoe -->
+
+---
+
+### `// 06. TERMINAL GUESTBOOK`
+
+Drop a line on the profile! Click **Sign Guestbook** below to submit an issue with your message — GitHub Actions will automatically sanitize and append your entry here.
+
+<div align="center">
+  <a href="https://github.com/paazil3rdviz/paazil3rdviz/issues/new?title=guestbook%3A+sign&body=Enter+your+message+or+greeting+here%21">
+    <img src="https://img.shields.io/badge/SIGN-TERMINAL_GUESTBOOK-1A1B26?style=for-the-badge&logo=git&logoColor=7AA2F7&labelColor=16161E" alt="Sign Guestbook" />
+  </a>
+</div>
+
+<br />
+
+<!-- START_SECTION:guestbook -->
+<table>
+  <thead>
+    <tr>
+      <th>Timestamp</th>
+      <th>Visitor</th>
+      <th>Message</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>2026-11-20 07:05 UTC</code></td><td><a href="https://github.com/paazil3rdviz"><b>@paazil3rdviz</b></a></td><td>Welcome to the profile terminal! Feel free to leave a note or feedback. 🚀</td></tr>
+    <tr>
+      <th>Timestamp</th>
+      <th>Visitor</th>
+      <th>Message</th>
+    </tr>
+    <tr><td><code>2026-11-20 07:05 UTC</code></td><td><a href="https://github.com/paazil3rdviz"><b>@paazil3rdviz</b></a></td><td>Testing terminal guestbook integration!</td></tr>
+    <tr>
+      <th>Timestamp</th>
+      <th>Visitor</th>
+      <th>Message</th>
+    </tr>
+    <tr>
+      <td><code>2026-11-20 12:35 UTC</code></td>
+      <td><a href="https://github.com/paazil3rdviz"><b>@paazil3rdviz</b></a></td>
+      <td>Welcome to the profile terminal! Feel free to leave a note or feedback. 🚀</td>
+    </tr>
+  </tbody>
+</table>
+<!-- END_SECTION:guestbook -->
+
+---
+
+### `// 07. AUDIO & CODING TELEMETRY`
+
+<div align="center">
+
+<!-- Spotify Dynamic Now-Playing Bar (Tokyo Night Palette) -->
+<a href="https://open.spotify.com">
+  <img src="https://novatorem.vercel.app/api/spotify?background_color=16161e&border_color=24283b&title_color=7aa2f7&artist_color=c0caf5" alt="Spotify Telemetry" />
+</a>
+
+</div>
+
+---
+
+### `// 08. REPOSITORY DIRECTORY & CONNECT`
 
 <div align="center">
 
@@ -158,7 +239,6 @@ paazil@workstation:~$ ping -c 1 https://github.com/paazil3rdviz
 <a href="https://github.com/paazil3rdviz?tab=repositories">
   <img src="https://img.shields.io/badge/Repositories-Browse_Code-1A1B26?style=flat-square&logo=git&logoColor=73DACA" alt="Repositories" />
 </a>
-<!-- Update with your personal LinkedIn profile URL -->
 <a href="https://www.linkedin.com/in/">
   <img src="https://img.shields.io/badge/LinkedIn-Connect-1A1B26?style=flat-square&logo=linkedin&logoColor=BB9AF7" alt="LinkedIn" />
 </a>

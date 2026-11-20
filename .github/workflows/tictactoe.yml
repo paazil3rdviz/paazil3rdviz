@@ -1,0 +1,60 @@
+name: Community Tic-Tac-Toe Game
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  play:
+    name: Play Tic-Tac-Toe
+    if: startsWith(github.event.issue.title, 'ttc|')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Execute Move
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+        run: python scripts/tictactoe.py
+
+      - name: Commit updated README & state
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md data/tictactoe.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "game: @${{ github.event.issue.user.login }} move on Tic-Tac-Toe [skip ci]"
+            git push origin main
+          fi
+
+      - name: Close Issue with Response
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `### 🎮 Turn Played!\n\nYour move was registered and Tokyo Bot has answered on the board.\nCheck the updated board on [@paazil3rdviz's profile](https://github.com/paazil3rdviz)!`
+            });
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed'
+            });
