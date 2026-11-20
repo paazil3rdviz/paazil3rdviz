@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 250" width="100%" height="250" fill="none">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="cyberBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7AA2F7" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#BB9AF7" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#73DACA" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <linearGradient id="glowLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7AA2F7" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#7AA2F7" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#BB9AF7" stop-opacity="1"/>
+      <stop offset="75%" stop-color="#73DACA" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#73DACA" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16161E"/>
+      <stop offset="50%" stop-color="#1A1B26"/>
+      <stop offset="100%" stop-color="#13141C"/>
+    </linearGradient>
+
+    <pattern id="cyberGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#24283B" stroke-width="0.75" stroke-opacity="0.6"/>
+    </pattern>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&amp;family=Space+Grotesk:wght@500;700&amp;display=swap');
+
+      .title {
+        font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        fill: #C0CAF5;
+        letter-spacing: -0.5px;
+      }
+      .role {
+        font-family: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-weight: 600;
+        font-size: 13.5px;
+        fill: #7AA2F7;
+        letter-spacing: 0.2px;
+      }
+      .meta {
+        font-family: 'Fira Code', ui-monospace, SFMono-Regular, monospace;
+        font-size: 11px;
+        fill: #7982A9;
+      }
+      .tagline {
+        font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 400;
+        font-size: 13.5px;
+        fill: #9AA5CE;
+      }
+      .pill-text {
+        font-family: 'Fira Code', ui-monospace, monospace;
+        font-size: 11px;
+        font-weight: 500;
+        fill: #A9B1D6;
+      }
+      .status-text {
+        font-family: 'Fira Code', ui-monospace, monospace;
+        font-size: 11px;
+        font-weight: 500;
+        fill: #73DACA;
+      }
+
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; }
+        50% { opacity: 0.85; }
+      }
+      @keyframes beacon {
+        0%, 100% { r: 3.5; opacity: 1; }
+        50% { r: 5.5; opacity: 0.4; }
+      }
+      .pulsing-border {
+        animation: pulseGlow 4s ease-in-out infinite;
+      }
+      .pulsing-beacon {
+        animation: beacon 2.5s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Outer Card Frame with Subtle Cyber Border -->
+  <rect x="2" y="2" width="846" height="246" rx="14" fill="url(#bgGrad)" stroke="#24283B" stroke-width="1.5"/>
+  <rect x="2" y="2" width="846" height="246" rx="14" fill="url(#cyberGrid)"/>
+  
+  <!-- Outer Glow Accent -->
+  <rect x="2" y="2" width="846" height="246" rx="14" fill="none" stroke="url(#cyberBorder)" stroke-width="1.5" class="pulsing-border"/>
+
+  <!-- Top Accent Beam -->
+  <path d="M 30 2 L 820 2" stroke="url(#glowLine)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Top Terminal Bar Header -->
+  <g transform="translate(24, 20)">
+    <!-- Terminal window controls -->
+    <circle cx="0" cy="0" r="4.5" fill="#F7768E" opacity="0.9"/>
+    <circle cx="14" cy="0" r="4.5" fill="#E0AF68" opacity="0.9"/>
+    <circle cx="28" cy="0" r="4.5" fill="#9ECE6A" opacity="0.9"/>
+
+    <!-- Breadcrumb path -->
+    <text x="48" y="3.5" class="meta">paazil@production ~/showcase [main]</text>
+
+    <!-- Status Badge (Active Software Engineer - NOT open for work) -->
+    <g transform="translate(560, -9)">
+      <rect x="0" y="0" width="242" height="20" rx="10" fill="#1F2335" stroke="#292E42" stroke-width="1"/>
+      <circle cx="12" cy="10" r="3.5" fill="#73DACA" class="pulsing-beacon"/>
+      <circle cx="12" cy="10" r="3.5" fill="#73DACA"/>
+      <text x="24" y="13.5" class="status-text">SHIPPING PRODUCTION CODE</text>
+    </g>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="24" y1="42" x2="826" y2="42" stroke="#24283B" stroke-width="1"/>
+
+  <!-- Main Hero Profile Content -->
+  <g transform="translate(28, 82)">
+    <!-- Terminal prompt symbol -->
+    <text x="0" y="2" font-family="'Fira Code', monospace" font-size="20" font-weight="600" fill="#7AA2F7">&gt;</text>
+
+    <!-- Name -->
+    <text x="24" y="2" class="title">Paazil Parvesh</text>
+
+    <!-- Subtitle Role -->
+    <text x="25" y="28" class="role">Full-Stack Software Engineer <tspan fill="#BB9AF7">::</tspan> Architecture &amp; Scalable Systems</text>
+
+    <!-- Value proposition & engineering focus -->
+    <text x="25" y="52" class="tagline">Engineered for resilience. Designing high-throughput APIs, modular frontends &amp; ERP software.</text>
+  </g>
+
+  <!-- Curated Tech Pills Row -->
+  <g transform="translate(52, 185)">
+    <!-- Tech 1 -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="82" height="24" rx="5" fill="#1F2335" stroke="#343B58" stroke-width="1"/>
+      <line x1="0" y1="0" x2="0" y2="24" stroke="#7AA2F7" stroke-width="2.5"/>
+      <text x="10" y="16" class="pill-text">React 18</text>
+    </g>
+
+    <!-- Tech 2 -->
+    <g transform="translate(90, 0)">
+      <rect x="0" y="0" width="98" height="24" rx="5" fill="#1F2335" stroke="#343B58" stroke-width="1"/>
+      <line x1="0" y1="0" x2="0" y2="24" stroke="#7AA2F7" stroke-width="2.5"/>
+      <text x="10" y="16" class="pill-text">TypeScript</text>
+    </g>
+
+    <!-- Tech 3 -->
+    <g transform="translate(196, 0)">
+      <rect x="0" y="0" width="108" height="24" rx="5" fill="#1F2335" stroke="#343B58" stroke-width="1"/>
+      <line x1="0" y1="0" x2="0" y2="24" stroke="#73DACA" stroke-width="2.5"/>
+      <text x="10" y="16" class="pill-text">Django REST</text>
+    </g>
+
+    <!-- Tech 4 -->
+    <g transform="translate(312, 0)">
+      <rect x="0" y="0" width="76" height="24" rx="5" fill="#1F2335" stroke="#343B58" stroke-width="1"/>
+      <line x1="0" y1="0" x2="0" y2="24" stroke="#73DACA" stroke-width="2.5"/>
+      <text x="10" y="16" class="pill-text">Node.js</text>
+    </g>
+
+    <!-- Tech 5 -->
+    <g transform="translate(396, 0)">
+      <rect x="0" y="0" width="96" height="24" rx="5" fill="#1F2335" stroke="#343B58" stroke-width="1"/>
+      <line x1="0" y1="0" x2="0" y2="24" stroke="#BB9AF7" stroke-width="2.5"/>
+      <text x="10" y="16" class="pill-text">PostgreSQL</text>
+    </g>
+
+    <!-- Tech 6 -->
+    <g transform="translate(500, 0)">
+      <rect x="0" y="0" width="72" height="24" rx="5" fill="#1F2335" stroke="#343B58" stroke-width="1"/>
+      <line x1="0" y1="0" x2="0" y2="24" stroke="#BB9AF7" stroke-width="2.5"/>
+      <text x="10" y="16" class="pill-text">Docker</text>
+    </g>
+
+    <!-- Meta Right Status -->
+    <g transform="translate(620, 0)">
+      <text x="0" y="16" class="meta">ARCH // OSS // CI-AUTOMATION</text>
+    </g>
+  </g>
+
+  <!-- Bottom Terminal Accent Dot -->
+  <rect x="806" y="222" width="16" height="2.5" rx="1" fill="#7AA2F7" opacity="0.6"/>
+</svg>
